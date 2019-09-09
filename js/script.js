@@ -7,3 +7,4 @@ function(){
   if($(this).css('display')==='none')
   $(this).removeAltr('style';}
 });
+

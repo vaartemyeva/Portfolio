@@ -317,21 +317,265 @@ i.fa {
     background: url("../images/pic2.jpg");
     background-size: cover;
     background-attachment: fixed;
+
+    .skills_wrap{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 50px 50px;
+    }
+
+    .skills_box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+    }
+
+    .donut{
+        width: 180px;
+        height: 180px;
+        stroke-width: 2.5px;   
+        fill: transparent;     
+    }
+
+    .donut-ring{
+        stroke: #fff;
+    }
+
+    .donut-segment{
+        stroke: #2c3e50;
+        stroke-dashoffset: 25;
+    }
+
+    .donut-segment-less1{
+        stroke: #2c3e50;
+        stroke-dashoffset: 5;
+    }
+
+    .donut-segment-less2{
+        stroke: #2c3e50;
+        stroke-dashoffset: 20;
+    }
+
+    .percent{
+        position: absolute;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #474d5d;
+        left: 75px;
+        top: 75px;
+    }
+
+    h3{
+        font-size: 1.2em;
+        font-weight: 700;
+        color: #E87E04;
+        text-shadow: 1px 1px #fff;
+    }
 }
 
 /*------------------------------------END MY SKILLS--------------------------------------------*/
 
-/*------------------------------------START SOME STATS-------------------------------------------*/
+/*------------------------------------START EXPERIENCE-------------------------------*/
+.experience, .education{
+    text-align: center;
+    padding: 80px 0 40px;
+    background: linear-gradient(#ffffff 0%, #f4f5f6 50%, #ffffff 100%);
+    
+    .experience_wrap, .education_wrap{
+        padding: 0 15px;
+        margin: 0 30px;
+        position: relative;
+
+        ul.timeline::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            margin-left: -1.5px;
+            background-color: #eee;
+        }
+    }
+
+    .timeline{
+        margin-top: 60px;
+        padding: 0 20px;
+    }
+
+    li{
+        min-height: 150px;
+        list-style-type: none;
+        margin-bottom: 100px;
+        position: relative;
+        margin: 0 0 100px;
+    }
+
+    .timeline_circle{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        text-align: center;
+        background: #fff;
+        left: 50%;
+        margin-left: -75px;
+
+        h4{
+            text-transform: uppercase;
+            color: #616e7c;
+            font-size: 1.3em;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 35px 5px 0;
+        }
+    }
+
+    .timeline_text1, .timeline_text3{
+        float: left;
+        position: absolute;
+        width: 40%;
+        text-align: right;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0 20px 20px;
+
+        .text_color{
+            color: #E87E04;
+            text-transform: none;
+            margin: 10px 0 10px 0;
+        }
+    
+        h4{
+            color: #616e7c;
+            font-size: 1.15em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    
+        p{
+            font-size: 0.98em;
+            margin: 0;
+        }
+
+    }
+
+    .timeline_text2{
+        float: right;
+        right: 0;
+        position: absolute;
+        width: 40%;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0 20px 20px;
+
+        .text_color{
+            color: #E87E04;
+            text-transform: none;
+            margin: 10px 0 10px 0;
+        }
+
+        h4{
+            color: #616e7c;
+            font-size: 1.15em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        p{
+            font-size: 0.98em;
+            margin: 0;
+        }
+    }
+}
+
+.experience_wrap .timeline li:last-child{
+    margin-bottom: -70px;
+}
+/*------------------------------------END EXPERIENCE---------------------------------*/
+
+/*------------------------------------START SOME STATS-----------------------------------------*/
 .some_stats{
     text-align: center;
     padding: 80px 0 40px;
     background: url("../images/pic3.jpg");
     background-size: cover;
     background-attachment: fixed;
+
+    .achievement_wrap{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 100px 30px 40px 30px;
+    
+        .achievement_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 15px;
+            width: 23%;
+        }
+
+        i{
+            font-size: 4.2em;
+            font-weight: 400;
+            color: #E87E04;
+            margin-bottom: 20px;
+        }
+        .count{
+            color: #415161;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        h4{
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #616e7c;
+            text-shadow: 1px 1px #fff;
+        }
+    }
+
 }
 
 /*------------------------------------END SOME STATS-------------------------------------------*/
 
+/*------------------------------------START TESTIMONIALS---------------------------------------*/
+.testimonials{
+    text-align: center;
+    padding: 80px 0 40px;
+
+    .slide_wrap{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 720px;
+        padding: 20px;
+        margin: auto;
+    
+        .slide{
+            width: 100%;
+        }
+
+        .img-circle{
+            align-self: center;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        p{
+            margin: 30px 0;
+        }
+    }
+}
+
+/*------------------------------------END TESTIMONIALS-----------------------------------------*/
 
 /*------------------------------------START CONTACT--------------------------------------------*/
 .contact{
@@ -460,5 +704,11 @@ footer{
 @media screen and (max-width: 490px){
     body{
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .slide_wrap{
+        width: 95%;
     }
 }

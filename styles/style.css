@@ -289,8 +289,185 @@ i.fa {
   background-size: cover;
   background-attachment: fixed;
 }
+.skills .skills_wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 50px 50px;
+}
+.skills .skills_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+}
+.skills .donut {
+  width: 180px;
+  height: 180px;
+  stroke-width: 2.5px;
+  fill: transparent;
+}
+.skills .donut-ring {
+  stroke: #fff;
+}
+.skills .donut-segment {
+  stroke: #2c3e50;
+  stroke-dashoffset: 25;
+}
+.skills .donut-segment-less1 {
+  stroke: #2c3e50;
+  stroke-dashoffset: 5;
+}
+.skills .donut-segment-less2 {
+  stroke: #2c3e50;
+  stroke-dashoffset: 20;
+}
+.skills .percent {
+  position: absolute;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #474d5d;
+  left: 75px;
+  top: 75px;
+}
+.skills h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #E87E04;
+  text-shadow: 1px 1px #fff;
+}
 /*------------------------------------END MY SKILLS--------------------------------------------*/
-/*------------------------------------START SOME STATS-------------------------------------------*/
+/*------------------------------------START EXPERIENCE-------------------------------*/
+.experience,
+.education {
+  text-align: center;
+  padding: 80px 0 40px;
+  background: linear-gradient(#ffffff 0%, #f4f5f6 50%, #ffffff 100%);
+}
+.experience .experience_wrap,
+.education .experience_wrap,
+.experience .education_wrap,
+.education .education_wrap {
+  padding: 0 15px;
+  margin: 0 30px;
+  position: relative;
+}
+.experience .experience_wrap ul.timeline::before,
+.education .experience_wrap ul.timeline::before,
+.experience .education_wrap ul.timeline::before,
+.education .education_wrap ul.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #eee;
+}
+.experience .timeline,
+.education .timeline {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.experience li,
+.education li {
+  min-height: 150px;
+  list-style-type: none;
+  margin-bottom: 100px;
+  position: relative;
+  margin: 0 0 100px;
+}
+.experience .timeline_circle,
+.education .timeline_circle {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  left: 50%;
+  margin-left: -75px;
+}
+.experience .timeline_circle h4,
+.education .timeline_circle h4 {
+  text-transform: uppercase;
+  color: #616e7c;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 35px 5px 0;
+}
+.experience .timeline_text1,
+.education .timeline_text1,
+.experience .timeline_text3,
+.education .timeline_text3 {
+  float: left;
+  position: absolute;
+  width: 40%;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 20px 20px;
+}
+.experience .timeline_text1 .text_color,
+.education .timeline_text1 .text_color,
+.experience .timeline_text3 .text_color,
+.education .timeline_text3 .text_color {
+  color: #E87E04;
+  text-transform: none;
+  margin: 10px 0 10px 0;
+}
+.experience .timeline_text1 h4,
+.education .timeline_text1 h4,
+.experience .timeline_text3 h4,
+.education .timeline_text3 h4 {
+  color: #616e7c;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.experience .timeline_text1 p,
+.education .timeline_text1 p,
+.experience .timeline_text3 p,
+.education .timeline_text3 p {
+  font-size: 0.98em;
+  margin: 0;
+}
+.experience .timeline_text2,
+.education .timeline_text2 {
+  float: right;
+  right: 0;
+  position: absolute;
+  width: 40%;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 20px 20px;
+}
+.experience .timeline_text2 .text_color,
+.education .timeline_text2 .text_color {
+  color: #E87E04;
+  text-transform: none;
+  margin: 10px 0 10px 0;
+}
+.experience .timeline_text2 h4,
+.education .timeline_text2 h4 {
+  color: #616e7c;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.experience .timeline_text2 p,
+.education .timeline_text2 p {
+  font-size: 0.98em;
+  margin: 0;
+}
+.experience_wrap .timeline li:last-child {
+  margin-bottom: -70px;
+}
+/*------------------------------------END EXPERIENCE---------------------------------*/
+/*------------------------------------START SOME STATS-----------------------------------------*/
 .some_stats {
   text-align: center;
   padding: 80px 0 40px;
@@ -298,7 +475,66 @@ i.fa {
   background-size: cover;
   background-attachment: fixed;
 }
+.some_stats .achievement_wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px 30px 40px 30px;
+}
+.some_stats .achievement_wrap .achievement_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+  width: 23%;
+}
+.some_stats .achievement_wrap i {
+  font-size: 4.2em;
+  font-weight: 400;
+  color: #E87E04;
+  margin-bottom: 20px;
+}
+.some_stats .achievement_wrap .count {
+  color: #415161;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.some_stats .achievement_wrap h4 {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #616e7c;
+  text-shadow: 1px 1px #fff;
+}
 /*------------------------------------END SOME STATS-------------------------------------------*/
+/*------------------------------------START TESTIMONIALS---------------------------------------*/
+.testimonials {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+.testimonials .slide_wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 720px;
+  padding: 20px;
+  margin: auto;
+}
+.testimonials .slide_wrap .slide {
+  width: 100%;
+}
+.testimonials .slide_wrap .img-circle {
+  align-self: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.testimonials .slide_wrap p {
+  margin: 30px 0;
+}
+/*------------------------------------END TESTIMONIALS-----------------------------------------*/
 /*------------------------------------START CONTACT--------------------------------------------*/
 .contact {
   text-align: center;
@@ -410,5 +646,10 @@ footer a:hover {
 @media screen and (max-width: 490px) {
   body {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slide_wrap {
+    width: 95%;
   }
 }
