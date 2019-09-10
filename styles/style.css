@@ -9,6 +9,7 @@ body {
 * {
   box-sizing: border-box;
 }
+/*----COLOR-----*/
 /*-------------------------------------START TOP HEADER---------------------------------------------*/
 .header {
   height: 100vh;
@@ -21,7 +22,7 @@ body {
   text-align: center;
   justify-content: center;
   color: #FFDAB9;
-  text-shadow: 2px 2px #555555;
+  text-shadow: 2px 2px #555;
 }
 .header .header_wrap {
   margin-top: -130px;
@@ -43,7 +44,7 @@ body {
   background-color: transparent;
   border: 1.3px solid #FFDAB9;
   color: #FFDAB9;
-  text-shadow: 1px 1px #555555;
+  text-shadow: 1px 1px #555;
   margin: 30px 10px 0 10px;
   padding: 10px 16px;
   transition: background-color 0.7s;
@@ -179,6 +180,9 @@ p {
 }
 .personality .btn:hover {
   background-color: #2c3e50;
+  color: #fff;
+}
+.personality .btn:hover .fa {
   color: #fff;
 }
 /*-------------------------------------------END ABOUT ME-----------------------------------------------*/
@@ -344,7 +348,7 @@ i.fa {
 .education {
   text-align: center;
   padding: 80px 0 40px;
-  background: linear-gradient(#ffffff 0%, #f4f5f6 50%, #ffffff 100%);
+  background: linear-gradient(#fff 0%, #f4f5f6 50%, #fff 100%);
 }
 .experience .experience_wrap,
 .education .experience_wrap,
@@ -409,7 +413,7 @@ i.fa {
   width: 40%;
   text-align: right;
   font-family: 'Open Sans', sans-serif;
-  padding: 0 20px 20px;
+  padding: 20px 20px 20px;
 }
 .experience .timeline_text1 .text_color,
 .education .timeline_text1 .text_color,
@@ -443,7 +447,7 @@ i.fa {
   width: 40%;
   text-align: left;
   font-family: 'Open Sans', sans-serif;
-  padding: 0 20px 20px;
+  padding: 20px 20px 20px;
 }
 .experience .timeline_text2 .text_color,
 .education .timeline_text2 .text_color {
@@ -644,12 +648,28 @@ footer a:hover {
 }
 /*-----------------------------------END FOOTER--------------------------------------------*/
 @media screen and (max-width: 490px) {
+  html,
   body {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 750px) {
+  .services_wrap div {
+    width: 100% !important;
+  }
   .slide_wrap {
     width: 95%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .message_wrap .text_form {
+    width: 700px !important;
+  }
+  .services_wrap div {
+    width: 50% !important;
+  }
+  .timeline_circle {
+    width: 100px !important;
+    height: 100px !important;
   }
 }
