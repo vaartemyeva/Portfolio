@@ -7,6 +7,12 @@ html, body{
 }
 *{box-sizing: border-box;}
 
+.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
 /*----COLOR-----*/
 @orange: #E87E04;
 @light_salmon: #FFDAB9;
@@ -84,6 +90,7 @@ html, body{
     display: flex;
     font-size: 1.2em;
     font-weight: 400;
+    z-index: 999;
 
     .links_wrapper{
         display: flex;
@@ -168,10 +175,10 @@ p{
     color: @grey;
 
     .img-circle{
-        align-self: center;
         border-radius: 50%;
         width: 200px;
         height: 200px;
+        display: inline-block;
     }
 
     p{

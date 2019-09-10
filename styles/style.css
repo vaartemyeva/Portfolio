@@ -9,6 +9,11 @@ body {
 * {
   box-sizing: border-box;
 }
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
 /*----COLOR-----*/
 /*-------------------------------------START TOP HEADER---------------------------------------------*/
 .header {
@@ -64,6 +69,7 @@ body {
   display: flex;
   font-size: 1.2em;
   font-weight: 400;
+  z-index: 999;
 }
 .main_menu .links_wrapper {
   display: flex;
@@ -143,10 +149,10 @@ p {
   color: #616e7c;
 }
 .personality .img-circle {
-  align-self: center;
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  display: inline-block;
 }
 .personality p {
   max-width: 800px;
