@@ -193,7 +193,7 @@ p {
   margin: 50px 20px;
 }
 .services_wrap div {
-  padding: 0 15px;
+  padding: 15px;
   width: 23%;
 }
 .services_wrap h3 {
@@ -488,7 +488,7 @@ i.fa {
   color: #E87E04;
   margin-bottom: 20px;
 }
-.some_stats .achievement_wrap .count {
+.some_stats .achievement_wrap .counter {
   color: #415161;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5em;
@@ -530,6 +530,17 @@ i.fa {
 .testimonials .owl-carousel .owl-item img {
   display: inline-block;
 }
+.testimonials button.owl-dot active {
+  color: #E87E04;
+  cursor: pointer;
+}
+.testimonials button.owl-dot {
+  color: #d5d8dc;
+  cursor: pointer;
+}
+.testimonials button.owl-dot:hover {
+  color: #E87E04;
+}
 /*------------------------------------END TESTIMONIALS-----------------------------------------*/
 /*------------------------------------START CONTACT--------------------------------------------*/
 .contact {
@@ -538,6 +549,9 @@ i.fa {
   background: url("../images/pic4.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+.contact div p {
+  margin: 0 10px;
 }
 .contact .contact_wrap {
   display: flex;

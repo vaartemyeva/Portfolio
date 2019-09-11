@@ -66,4 +66,10 @@ console.log(btn);
       loop: 1,
     });
 
+    $('.counter').countUp({
+      'time': 1000,
+      'delay': 10
+    });
+      
+
 });
