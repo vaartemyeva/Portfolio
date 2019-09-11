@@ -100,23 +100,6 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
-/*.menuToggle{
-    padding: 15px 15px;
-    display: none;
-    cursor: pointer;
-    border: 1px solid red;
-}
-@media screen and (max-width:650px){
-    .menu{
-        display: none;
-        position: absolute;
-    }
-    .menuToggle{
-        display: flex;
-        flex-grow: 1;
-        justify-content: flex-end;
-    }
-}*/
 /*------------------------------------------END MENU LINKS---------------------------------------------*/
 /*------------------------------------------COMMON-----------------------------------------------------*/
 .title {
@@ -152,7 +135,7 @@ p {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  display: inline-block;
+  align-self: center;
 }
 .personality p {
   max-width: 800px;
@@ -543,6 +526,9 @@ i.fa {
 }
 .testimonials .slide_wrap p {
   margin: 30px 0;
+}
+.testimonials .owl-carousel .owl-item img {
+  display: inline-block;
 }
 /*------------------------------------END TESTIMONIALS-----------------------------------------*/
 /*------------------------------------START CONTACT--------------------------------------------*/
