@@ -46,10 +46,9 @@ body {
   cursor: pointer;
   font-size: 1.2em;
   border-radius: 6px;
-  background-color: transparent;
+  background-color: rgba(255, 218, 185, 0.6);
   border: 1.3px solid #FFDAB9;
-  color: #FFDAB9;
-  text-shadow: 1px 1px #555;
+  color: #555;
   margin: 30px 10px 0 10px;
   padding: 10px 16px;
   transition: background-color 0.7s;
@@ -656,11 +655,21 @@ footer a:hover {
 @media screen and (max-width: 490px) {
   html,
   body {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .message_wrap .row_message .text_form,
+  .contact form #textarea {
+    width: 300px !important;
+  }
+  .slide {
+    width: 290px !important;
   }
 }
 @media screen and (max-width: 750px) {
-  .services_wrap div {
+  .services .services_wrap div {
+    width: 100% !important;
+  }
+  .some_stats .achievement_wrap .achievement_box {
     width: 100% !important;
   }
   .slide_wrap {
@@ -668,11 +677,30 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 992px) {
-  .message_wrap .text_form {
+  .row_message .text_form,
+  #textarea {
     width: 700px !important;
   }
   .services_wrap div {
     width: 50% !important;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .achievement_wrap .achievement_box {
+    width: 50% !important;
+  }
+  .achievement_wrap .achievement_box i {
+    font-size: 60px;
+  }
+  .achievement_wrap .achievement_box .counter {
+    font-size: 36px;
+  }
+  .achievement_wrap .achievement_box h4 {
+    font-size: 14px;
+  }
+  .slide {
+    width: 720px !important;
   }
   .timeline_circle {
     width: 100px !important;
